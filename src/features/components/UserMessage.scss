@@ -1,0 +1,12 @@
+.user-message-container {
+    margin: 0.5rem 0;
+    text-align: right;
+
+    .user-message {
+        background-color: var(--gray-light);
+        border-radius: 0.5rem 0.5rem 0 0.5rem;
+        padding: 0.5rem 1rem;
+        display: inline-block;
+        max-width: 80%;
+    }
+}

@@ -1,0 +1,52 @@
+.bot-message-container {
+    margin: 0.5rem 0;
+    text-align: left;
+
+    .bot-message {
+        background-color: #ececfb;
+        border: 6px solid #ececfb;
+        border-radius: 0.5rem 0.5rem 0.5rem 0;
+        display: inline-block;
+        max-width: 80%;
+
+        &.error {
+            background-color: #f9e3e3;
+            border-color: #f9e3e3;
+        }
+
+        .bot-message-text {
+            padding: 0.5rem 1rem;
+        }
+
+        .bot-message-options {
+            min-width: 50vw;
+            text-align: center;
+
+            li {
+                border-bottom: 2px solid #ececfb;
+                width: 100%;
+                background: white;
+                transition: .2s ease-out;
+
+                .text {
+                    padding: 0.5rem 1rem;
+                }
+
+                button {
+                    padding: 0.5rem 1rem;
+                    width: 100%;
+                }
+
+                &.is-selectable:hover {
+                    background-color: var(--gray-light);
+                }
+
+                &:last-child {
+                     border-bottom: none;
+                     border-bottom-left-radius: 0.5rem;
+                     border-bottom-right-radius: 0.5rem;
+                 }
+            }
+        }
+    }
+}

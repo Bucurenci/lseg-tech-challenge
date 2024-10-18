@@ -1,0 +1,10 @@
+.messages-container {
+    position: relative;
+    height: calc(100vh - 140px);
+    overflow: hidden;
+    overflow-y: auto;
+
+    .messages-wrapper {
+        padding: 1rem 0.5rem;
+    }
+}
