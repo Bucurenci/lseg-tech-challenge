@@ -1,50 +1,27 @@
-# React + TypeScript + Vite
+# LSEG Tech Challenge - Documentation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+To run in a local environment, you will need to have Node.js installed. You can download it from [here](https://nodejs.org/en/).
 
-Currently, two official plugins are available:
+## Installation and running the project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```
+cd PATH_TO_PROJECTS_FOLDER
 
-## Expanding the ESLint configuration
+git clone https://github.com/Bucurenci/lseg-tech-challenge.git
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+cd lseg-tech-challenge
 
-- Configure the top-level `parserOptions` property like this:
+npm install
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+npm run preview
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Other information
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+The project has a few differences from your initial requirements because when I began working on it, I quickly went through the details and ended up using the image from the PDF as a reference for the model.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+I have used the following technologies to build this project:
+
+- React
+- TypeScript
+- SCSS
